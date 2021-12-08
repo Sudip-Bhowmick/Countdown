@@ -1,0 +1,62 @@
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #131313;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+
+.main-div {
+  position: relative;
+  top: 30%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  margin-top: 0;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+.counter {
+  max-width: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  font-size: 8rem;
+}
+
+.counter > div::after {
+  content: ":";
+  padding: 0 10px;
+}
+
+.counter > div:last-child::after {
+  content: "";
+}
+
+@media (max-width: 991px) {
+  .counter {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=index.css.map */
